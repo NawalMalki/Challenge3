@@ -40,7 +40,6 @@ Thank you card :
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: <a href="https://challenge3-drab.vercel.app/?vercelToolbarCode=eKO758RlNIvE0_K">Click here to see </a>
 
 ## My process
