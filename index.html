@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./Styles.css"/>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+
+  <section class="section1" id="section1">
+    <div class="img_container">
+      <img src="./images/icon-star.svg"/>
+    </div>
+
+    
+    <h1>How did we do?</h1>
+    <p class="spec">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+      <form>
+        <div class="i i1" onclick="select(this)">
+          <p>1</p>
+          <input type="checkbox">
+        </div>
+
+
+        <div class="i" onclick="select(this)">
+          <p>2</p>
+          <input type="checkbox">
+        </div>
+        <div class="i" onclick="select(this)">
+          <p>3</p>
+          <input type="checkbox">
+        </div>
+        <div class="i" onclick="select(this)">
+          <p>4</p>
+          <input type="checkbox">
+        </div>
+        <div class="i" onclick="select(this)">
+          <p>5</p>
+          <input type="checkbox">
+        </div>
+        
+        
+        
+        
+        
+      </form>
+
+      <button onclick="change()">Submit</button>
+    
+
+    
+  
+     
+  
+    
+
+  </section>
+
+  
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class="section2" id="section2">
+
+    <img src="./images/illustration-thank-you.svg"/>
+    <div class="rating">
+      <p>You selected <script>
+        
+      </script> out of 5</p>
+    </div>
+
+    <h1>Thank you!</h1>
+
+    <p class="speci">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+
+    
+
+  
+
+  
+    
+  </section>
+
+
+
+  <!-- Thank you state end -->
+
+  
+ <script>
+  var selectedDiv = null;
+
+function select(element) {
+    if (selectedDiv !== null) {
+        // Reset the style of the previously selected div
+        selectedDiv.style.backgroundColor = 'rgb(47, 52, 58)';
+        selectedDiv.style.color = 'hsl(0, 0%, 100%)';
+    }
+
+    // Apply the selected styles to the clicked div
+    element.style.backgroundColor = 'var(--Orange)';
+    element.style.color = 'hsl(0, 0%, 100%)';
+
+    // Update the selectedDiv variable with the current selection
+    selectedDiv = element;
+}
+
+
+function change(){
+     document.getElementById("section1").style.display="none"; 
+     document.getElementById("section2").style.display="block"
+}
+
+
+
+
+ </script>
+</body>
+</html>
