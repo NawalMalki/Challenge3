@@ -107,6 +107,7 @@
   
  <script>
   var selectedDiv = null;
+  const confMsg = document.querySelector('.rating');
 
 function select(element) {
     if (selectedDiv !== null) {
@@ -126,7 +127,9 @@ function select(element) {
 
 function change(){
      document.getElementById("section1").style.display="none"; 
-     document.getElementById("section2").style.display="block"
+     document.getElementById("section2").style.display="block";
+     const rating = selectedDiv.querySelector('p').innerText;
+     confMsg.innerText = `You selected ${rating} out of 5`;
 }
 
 
