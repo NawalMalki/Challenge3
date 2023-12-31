@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+# Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). 
 
 ## Table of contents
 
@@ -42,7 +42,7 @@ Thank you card :
 
 - Live Site URL: <a href="https://challenge3-drab.vercel.app/?vercelToolbarCode=eKO758RlNIvE0_K">Click here to see </a>
 
-## My process
+
 
 ### Built with
 
